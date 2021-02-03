@@ -49,6 +49,10 @@ export default {
             this.axios.get(url).then(response => {
                 this.dados = response.data
                 this.spinner = false;
+            }).catch(erro => {
+                alert("Falha ao obter dados. Tente novamente mais tarde.")
+                console.log(erro);
+                this.spinner = false;
             });
         }
     },
