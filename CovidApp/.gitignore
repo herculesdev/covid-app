@@ -1,0 +1,10 @@
+.vs
+.vscode
+packages
+CovidApp.API/Covid.db
+CovidApp.API/bin
+CovidApp.API/obj
+CovidApp.Core/bin
+CovidApp.Core/obj
+CovidApp.Infra/bin
+CovidApp.Infra/obj
