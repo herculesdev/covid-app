@@ -42,10 +42,13 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: C:\covid-app\CovidApp\CovidApp.API
 ```
-Após isto, a Web API estará em pleno funcionamento. Para testar utilize um dos links do item "Now listening On" e faça uma requisição do tipo "Get" para o endpoint:
-https://localhost:5001/casos/media?de=2021-02-02&ate=2021-02-03
 
-O resultado deve um Json com a média móvel dos casos e morte no período especificados no parâmetro "de" e "ate" tal como
+Após isto, a Web API estará em pleno funcionamento. Teste realiazndo uma requisição "Get" para o endpoint:
+```
+https://localhost:5001/casos/media?de=2021-02-02&ate=2021-02-03
+```
+
+O resultado deve ser um json com a média móvel dos casos e mortes no período especificados no parâmetro "de" e "ate" do endpoint:
 ```
 {
     "casos": 9283418,
