@@ -3,7 +3,7 @@
         <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">    
             <h2>Média Móvel Coronavírus</h2>
             <p class="lead">
-                Esta aplicação foi desenvolvida como prova técnica para o processo seletivo da Sommus Sistemas e exibe a média móvel dos casos e mortes do coronavírus no Brasil relativos as últimas 3 semanas.
+                Esta aplicação foi desenvolvida como forma de estudo e exibe a média móvel dos casos e mortes do coronavírus no Brasil relativos as últimas 3 semanas.
             </p>
             <div class="row mt-3 pt-3">
                 <div class="col-md-6">

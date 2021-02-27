@@ -8,3 +8,5 @@ CovidApp.Core/bin
 CovidApp.Core/obj
 CovidApp.Infra/bin
 CovidApp.Infra/obj
+CovidApp.Core.Tests/bin
+CovidApp.Core.Tests/obj
