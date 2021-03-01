@@ -7,6 +7,7 @@ using Moq;
 using CovidApp.Core.Interfaces.Repository;
 using CovidApp.Infra.Services;
 using System.Linq;
+using CovidApp.Core.Helpers;
 
 namespace CovidApp.Core.Tests.Services
 {
@@ -47,19 +48,10 @@ namespace CovidApp.Core.Tests.Services
                 (CasoCovid caso) => {
                     CasoCovid casoExistente = null;
                     if ((casoExistente = _bancoCasos.FirstOrDefault(x => x.Id == caso.Id)) == null)
-                    {
                         _bancoCasos.Add(caso);
-                    }
                     else
-                    {
-                        casoExistente.Pais = caso.Pais;
-                        casoExistente.Confirmados = caso.Confirmados;
-                        casoExistente.Mortes = caso.Mortes;
-                        casoExistente.Recuperados = caso.Recuperados;
-                        casoExistente.Ativos = caso.Ativos;
-                        casoExistente.Data = caso.Data;
-                    }
-
+                        CopiadorPropriedade.Copiar<CasoCovid, CasoCovid>(casoExistente, caso);
+                        
                     return caso;
                 }
             );
